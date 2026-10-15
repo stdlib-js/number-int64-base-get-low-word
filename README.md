@@ -35,14 +35,32 @@ limitations under the License.
 
 > Return a 32-bit unsigned integer corresponding to the low 32-bit word of a [64-bit signed integer][@stdlib/number/int64/ctor].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/number-int64-base-get-low-word
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import getLowWord from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-int64-base-get-low-word@deno/mod.js';
+var getLowWord = require( '@stdlib/number-int64-base-get-low-word' );
 ```
 
 #### getLowWord( a )
@@ -50,7 +68,7 @@ import getLowWord from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-int64-base-
 Returns a 32-bit unsigned integer corresponding to the low 32-bit word of a [64-bit signed integer][@stdlib/number/int64/ctor].
 
 ```javascript
-import Int64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-int64-ctor@deno/mod.js';
+var Int64 = require( '@stdlib/number-int64-ctor' );
 
 var a = new Int64( 4294967296 );
 var w = getLowWord( a );
@@ -60,7 +78,7 @@ var w = getLowWord( a );
 For negative values, the function returns the low word of the two's complement representation.
 
 ```javascript
-import Int64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-int64-ctor@deno/mod.js';
+var Int64 = require( '@stdlib/number-int64-ctor' );
 
 var a = new Int64( -1 );
 var w = getLowWord( a );
@@ -78,8 +96,8 @@ var w = getLowWord( a );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Int64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-int64-ctor@deno/mod.js';
-import getLowWord from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-int64-base-get-low-word@deno/mod.js';
+var Int64 = require( '@stdlib/number-int64-ctor' );
+var getLowWord = require( '@stdlib/number-int64-base-get-low-word' );
 
 var a = new Int64( 4294967296 );
 console.log( getLowWord( a ) );
@@ -127,7 +145,7 @@ console.log( getLowWord( a ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -190,7 +208,7 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/number-int64-base-get-low-word/main/LICENSE
 
-[@stdlib/number/int64/ctor]: https://github.com/stdlib-js/number-int64-ctor/tree/deno
+[@stdlib/number/int64/ctor]: https://github.com/stdlib-js/number-int64-ctor
 
 <!-- <related-links> -->
 
